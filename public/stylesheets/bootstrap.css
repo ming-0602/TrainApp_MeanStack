@@ -11937,3 +11937,7 @@ th {
 .card .h6 {
   color: inherit;
 }
+
+#personicon{
+  max-width: 10%;
+}
