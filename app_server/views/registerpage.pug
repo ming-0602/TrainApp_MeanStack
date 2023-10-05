@@ -1,3 +1,19 @@
 extends layout
 
 block content
+    form
+        fieldset
+            legend
+            .form-group
+                label.form-label.mt-4(for='exampleInputEmail1') Email address
+                span.inputbox
+                    input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                    small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
+            .form-group
+                label.form-label.mt-4(for='exampleInputPassword1') Password
+                input#exampleInputPassword1.form-control(type='password', placeholder='Password', autocomplete='off')
+            .form-group
+                label.form-label.mt-4(for='exampleInputPassword1') Confirm Password
+                input#exampleInputPassword2.form-control(type='password', placeholder='Password', autocomplete='off')
+                button.btn.btn-primary(type='submit') Submit
+                a.nav-link(href="/loginpage") Already a User? Click Here!

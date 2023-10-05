@@ -327,6 +327,7 @@ strong {
 
 small, .small {
   font-size: 0.875em;
+  text-align: center;
 }
 
 mark, .mark {
@@ -2119,25 +2120,67 @@ progress {
 
 #exampleInputPassword1{
   width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+#exampleInputPassword2{
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#exampleInputEmail1{
+  width: 50% !important;
+  /*text-align: center;*/
+  /*display: flex !important;*/
+  /*justify-content: center;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#emailHelp{
+  text-align: center !important;
+}
+
+.form-group{
+  text-align: center;
+  /*margin-left: 500px;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.form-group.nav-link{*/
+/*  margin-top: 500px !important;*/
+/*}*/
+
+.inputbox{
+  text-align: center;
+}
+
 
 
 .form-control {
   display: block;
+  /*display: flex;*/
+  /*justify-content: center;*/
   width: 100%;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
   color: var(--bs-body-color);
+  /*color: #0a0a0a;*/
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-color: #f7f7f9;
+  /*background-color: #0a0a0a;*/
   background-clip: padding-box;
   border: 0 solid var(--bs-border-color);
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  /*text-align: center;*/
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -2171,7 +2214,8 @@ progress {
   opacity: 1;
 }
 .form-control::placeholder {
-  color: var(--bs-secondary-color);
+  /*color: var(--bs-secondary-color);*/
+  color: gray;
   opacity: 1;
 }
 .form-control:disabled {
@@ -3032,6 +3076,9 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #1a1a1a;
   --bs-btn-disabled-border-color: #1a1a1a;
+  /*text-align: center !important;*/
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .btn-secondary {
@@ -3774,6 +3821,7 @@ textarea.form-control-lg {
   background: none;
   border: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-top: 5px;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -8307,6 +8355,7 @@ textarea.form-control-lg {
 .text-muted {
   --bs-text-opacity: 1;
   color: var(--bs-secondary-color) !important;
+  /*text-align: center !important;*/
 }
 
 .text-black-50 {
@@ -11938,6 +11987,12 @@ th {
   color: inherit;
 }
 
-#personicon{
-  max-width: 10%;
+.bi-person{
+  font-size: 15px;
 }
+
+.containerinfo{
+  border-style: solid;
+  padding: 10px;
+}
+
