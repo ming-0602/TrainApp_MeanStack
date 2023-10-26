@@ -1,3 +1,5 @@
+const ctrltraininfo = require('../controllers/traininfodata')
+
 const mongoose = require('mongoose');
 
 const dbURI = "mongodb+srv://admin:admin@cluster0.yxrab4v.mongodb.net/"
