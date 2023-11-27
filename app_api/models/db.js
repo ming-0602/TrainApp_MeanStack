@@ -1,8 +1,8 @@
-const ctrltraininfo = require('../controllers/traininfodata')
+const ctrltraininfo = require('../../app_server/controllers/traininfodata')
 
 const mongoose = require('mongoose');
 
-const dbURI = "mongodb+srv://admin:admin@cluster0.yxrab4v.mongodb.net/"
+const dbURI = "mongodb+srv://admin:admin@cluster0.yxrab4v.mongodb.net/Trains"
 
 try {
     mongoose.connect(

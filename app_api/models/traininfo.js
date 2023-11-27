@@ -12,4 +12,7 @@ const traininfoSchema = new mongoose.Schema({
         required: true}
 });
 
-mongoose.model('Traininfo', traininfoSchema)
+//first arg is name of collection, sec arg is schma used to create the collection
+mongoose.model('Traininfo', traininfoSchema, 'Traininfo')
+// mongoose.model('traininfo', traininfoSchema)
+

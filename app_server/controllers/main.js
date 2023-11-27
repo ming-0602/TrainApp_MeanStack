@@ -1,3 +1,4 @@
+// const request = require('request');
 const mainpage = function (req, res){
     res.render('mainpage', { title: 'TrainCheck'})
 };
