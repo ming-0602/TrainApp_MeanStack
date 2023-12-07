@@ -8,7 +8,7 @@ router
 
 router
     .route("/traininfo")
-    // .post(ctrltrain.trainCreate);
+    .post(ctrltrain.trainCreate)
     .get(ctrltrain.trainReadAll)
 
 module.exports = router;
