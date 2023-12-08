@@ -11,6 +11,7 @@ const registerpage = function (req, res){
     res.render('registerpage',{ title: 'TrainCheck'});
 };
 
+
 const favouritepage = function (req, res) {
     res.render('favouritepage',{ title: 'TrainCheck'});
 }

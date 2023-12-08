@@ -10,40 +10,7 @@ const trainReadone = function (req, res){
         });
 }
 
-// const trainCreate = function(req, res) {
-//     console.log('Request Body:', req.body);
-//
-//     Trains.create({
-//         CurrentLocation: req.body.CurrentLocation,
-//         PublicMessage: req.body.PublicMessage,
-//         ExpArrival: req.body.ExpArrival,
-//     })
-//         .then((train, err) => {
-//             if (err) {
-//                 res.status(400).json(err);
-//             } else {
-//                 res.status(201).json(train);
-//             }
-//         });
-// };
-
-
 const trainCreate = function(req, res, next) {
-    // const traininfos = {
-    //     CurrentLocation: req.body.CurrentLocation,
-    //     PublicMessage: req.body.PublicMessage,
-    //     ExpArrival: req.body.ExpArrival
-    // };
-
-    // Trains.create(traininfos).then((traininfos) => {
-    //     res.status(200).json(train)
-    // }).catch((err) => {
-    //     console.error(err);
-    //     res.status(400).json({ message: "erro"})
-    // })
-
-
-
     console.log(req.body)
     Trains.create({
         CurrentLocation: req.body.CurrentLocation,

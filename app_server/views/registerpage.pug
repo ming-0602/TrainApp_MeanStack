@@ -1,17 +1,16 @@
 extends layout
-
 block content
-    form
+    form(action="/api/registerpage", method="post")
         fieldset
             legend
             .form-group
                 label.form-label.mt-4(for='exampleInputEmail1') Email address
                 span.inputbox
-                    input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+                    input#exampleInputEmail1.form-control(type='email', name='username', aria-describedby='emailHelp', placeholder='Enter email')
                     small#emailHelp.form-text.text-muted We&apos;ll never share your email with anyone else.
             .form-group
                 label.form-label.mt-4(for='exampleInputPassword1') Password
-                input#exampleInputPassword1.form-control(type='password', placeholder='Password', autocomplete='off')
+                input#exampleInputPassword1.form-control(type='password', name='password', placeholder='Password', autocomplete='off')
             .form-group
                 label.form-label.mt-4(for='exampleInputPassword1') Confirm Password
                 input#exampleInputPassword2.form-control(type='password', placeholder='Password', autocomplete='off')
